@@ -15,22 +15,24 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex justify-center items-center flex-col relative z-10">
+        <motion.h1 variants={textVariant(1.1)} className={styles.heroSubHeading}>
+          The Syndicate Presents
+        </motion.h1>
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Metaverse
+          The Global
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
         >
-          <h1 className={styles.heroHeading}>Ma</h1>
-          <div className={styles.heroDText} />
-          <h1 className={styles.heroHeading}>Ness</h1>
+          <h2 className={styles.heroAiText}>AI</h2>
+          <h2 className={styles.heroHeading}>Hackathon</h2>
         </motion.div>
       </div>
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
+        className="relative w-full md:-mt-[20px] sm:-mt-[12px] mt-0"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
 
