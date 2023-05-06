@@ -2,48 +2,59 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    title: 'Developer',
+    message: 'You DO things RIGHT.',
   },
   {
     id: 'world-2',
     imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    title: 'Founder / SME',
+    message: 'You DO the RIGHT things.',
   },
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    title: 'Venture Capital',
+    message: 'You FUND the RIGHT things.',
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
-  },
-  {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    title: 'Researcher',
+    message: 'You ASK the RIGHT questions.',
   },
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Sign Up as a Developer, Founder / Subject Matter Expert, or Venture Capital',
+  'Prepare for the Hackathon with our AI Quickstart Guide',
+  'Follow @hackathonGPT on Twitter for updates and join our Discord server',
 ];
 
-export const newFeatures = [
+export const expectations = [
   {
     imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    title: 'How do I get started?',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'Where do I start and how do I keep up? With so many new AI tools & technologies, it`s hard to know where to start. We`ll help you get started stay up-to-date.',
+  },
+  {
+    imgUrl: '/vrpano.svg',
+    title: 'How do you bring AI in-house?',
+    subtitle:
+        'How might we use AI in a way that doesn`t leak our trade secrets to our competitors? Find out how to bring AI in-house and keep your data safe.',
   },
   {
     imgUrl: '/headset.svg',
-    title: 'More realistic',
+    title: 'How does the technology work?',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'Discover how LLMs (large language models) can generate insights at the speed of light when connected with vectorized databases.',
+  },
+  {
+    imgUrl: '/headset.svg',
+    title: 'I have an idea now what?',
+    subtitle:
+        'Many such cases; you have an idea but don`t know where to start. Now what? Come to the Hackathon, meet a Dev, and generate a working prototype in 48 hours.',
   },
 ];
 

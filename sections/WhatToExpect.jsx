@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { newFeatures } from '../constants';
+import { expectations } from '../constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
-import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
+import { staggerContainer, fadeIn } from '../utils/motion';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -18,12 +18,12 @@ const WhatsNew = () => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.95] flex justify-center flex-col"
+        className="flex-[0.95] flex justify-center flex-col md:col-span-2"
       >
-        <TypingText title="| Whats new?" />
-        <TitleText title={<>What's new about Metaversus?</>} />
+        <TypingText title="| Expectations" />
+        <TitleText title={<>What To Expect</>} />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {newFeatures.map((feature) => (
+          {expectations.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
           ))}
         </div>
@@ -31,7 +31,7 @@ const WhatsNew = () => (
 
       <motion.div
         variants={fadeIn('bottom', 'tween', 0.2, 1)}
-        className={`flex-1 ${styles.flexCenter}`}
+        className={`flex-1 ${styles.flexCenter} hidden lg:block lg:relative lg:bottom-[-65px]`}
       >
         <img
           src="/whats-new.png"

@@ -16,25 +16,21 @@ const About = () => (
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+      <TypingText title="| About HackGPT" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+        className="mx-12 mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{' '}
-        <span className="font-extrabold text-white">
-          madness of the metaverse
-        </span>{' '}
-        of today, using only{' '}
-        <span className="font-extrabold text-white">VR</span> devices you can
-        easily explore the metaverse world you want, turn your dreams into
-        reality. Let's{' '}
-        <span className="font-extrabold text-white">explore</span> the madness
-        of the metaverse by scrolling down
+        On  <span className="font-extrabold text-white">May 13-14, 2023</span>, the Syndicate is hosting <span className="font-extrabold text-white">HackGPT</span>, a groundbreaking Global AI Hackathon unfolding live on <span className="font-extrabold text-white">Twitter Spaces</span>.
+        Leaders across most industries are seeing the rapid growth of AI and are preparing for the next technological revolution.
+      </motion.p>
+
+      <motion.p
+        variants={fadeIn('up', 'tween', 0.2, 1)}
+        className="mx-12 mt-[20px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+      >
+        <span className="font-extrabold text-white">HackGPT</span> offers any individual or Fortune 2000 organization the opportunity to connect with other <span className="font-extrabold text-white">developers</span> and <span className="font-extrabold text-white">AI leaders</span> to build custom AI solutions that are targeted toward their use cases.
       </motion.p>
 
       <motion.img
