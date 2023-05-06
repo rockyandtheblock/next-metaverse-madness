@@ -18,15 +18,15 @@ const WhatsNew = () => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.95] flex justify-center flex-col md:col-span-2"
+        className="flex-[0.95] justify-center"
       >
         <TypingText title="| Expectations" />
         <TitleText title={<>What To Expect</>} />
-        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+        <motion.div className="mt-[48px] justify-between grid grid-col md:grid-cols-2 gap-[24px]">
           {expectations.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
           ))}
-        </div>
+        </motion.div>
       </motion.div>
 
       <motion.div

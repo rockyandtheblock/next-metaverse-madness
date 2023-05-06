@@ -16,11 +16,12 @@ const World = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
 
-      <TypingText title="| People on the World" textStyles="text-center" />
+      <TypingText title="| People of the World" textStyles="text-center" />
       <TitleText
         title={(
-          <>Track friends around you and invite them to play together in the same
-            world
+          <>
+            <span className="block sm:hidden">A Global AI Hackathon</span>
+            <span className="hidden sm:block">The Global AI Hackathon <br className="hidden sm:block" />features teams from around the globe.</span>
           </>
         )}
         textStyles="text-center"

@@ -61,21 +61,39 @@ export const expectations = [
 export const insights = [
   {
     imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+    title: 'Learn More About Our Speakers',
     subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+        'Explore and discover more about our domain experts and speakers. Learn about their background and their work with AI.',
   },
   {
     imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
+    title: 'Get Started with our AI Quickstart Guide',
     subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+        'Not sure where to start? Get started with our guide. We`ll help you get started on our Twitter Spaces.',
   },
   {
     imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
+    title: 'Looking for a Team?',
     subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+        'Join Twitter Spaces or Discord to meet like-minded builders and form a team. We`ll help you find your next dream team.',
+  },
+];
+
+export const feedback = [
+  {
+    author: 'Casey Rettke',
+    title: 'Loan Officer',
+    message: 'The Syndicate Experience transforms dreams into realities at warp speed. A nebulous concept has evolved into a groundbreaking multi-AI system that will redefine loan origination and underwriting.',
+  },
+  {
+    author: 'Michael Jagdeo',
+    title: 'UnicornLaunching',
+    message: 'The Syndicate`s fusion with a global community of trailblazing developers, data scientists, UX designers, and artists is poised to ignite an unprecedented AI-driven renaissance across industries.',
+  },
+  {
+    author: 'Joseph Chicas',
+    title: 'LAEDC',
+    message: 'AI unlocks the true potential of building in public and harnessing open-source models. HackGPT will enable visionaries to develop custom LLMs that will change the world, and change industries.',
   },
 ];
 
