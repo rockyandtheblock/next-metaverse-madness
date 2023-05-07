@@ -22,8 +22,8 @@ const Footer = () => {
       >
         <div className="footer-gradient" />
         <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-          <div className="flex items-center justify-between flex-wrap gap-5">
-            <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+          <div className="flex items-center justify-center md:justify-between flex-wrap gap-5">
+            <h4 className="font-bold md:text-[64px] sm:text-[35px] text-[30px] text-white text-center md:text-left">
               Dive Deeper into AI
             </h4>
             <button
@@ -66,31 +66,41 @@ const Footer = () => {
         </div>
       </motion.footer>
       <Modal
-        title="Join the hackathon"
+        title="Join the Hackathon"
         open={modalShown}
         setOpen={setModalShown}
       >
-        <p>Place your content here.</p>
+        <p>What role do you want to play?</p>
         <Link
-          href="https://"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-2xl text-white"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfhu58vbbjB9PN4FlRyIVQXI9go2hHCaCa2WoMFkt_w48E53w/viewform/"
+          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-full text-[12px] md:text-base lg:text-lg text-white"
+          target="_blank"
         >
-          Link 1
+          Developer / Designer / Researcher
         </Link>
         <Link
-          href="https://"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-2xl text-white"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdsLM14zCAEw_Rg3BWjdtPI1EcbtDDZ8M3wrnehLlAKEF6SUQ/viewform"
+          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-full text-[12px] md:text-base lg:text-lg text-white"
+          target="_blank"
         >
-          Link 2
+          Founder / Subject Matter Expert / Mentor
         </Link>
         <Link
-          href="https://"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-2xl text-white"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdsLM14zCAEw_Rg3BWjdtPI1EcbtDDZ8M3wrnehLlAKEF6SUQ/viewform"
+          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-full text-[12px] md:text-base lg:text-lg text-white"
+          target="_blank"
         >
-          Link 3
+          Venture Capital / Investor / Sponsor
+        </Link>
+        <Link
+          href="https://hackgpt-hackathon.glide.page/"
+          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-full text-[12px] md:text-base lg:text-lg text-white"
+          target="_blank"
+        >
+          Matchmaker App
         </Link>
         <button
-          className="flex items-center h-fit py-4 px-6 bg-gray-300 rounded-2xl text-black"
+          className="flex items-center h-fit py-4 px-6 bg-gray-300 rounded-full text-[12px] md:text-base lg:text-lg text-black"
           type="button"
           onClick={() => setModalShown(false)}
         >
