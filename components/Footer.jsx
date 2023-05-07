@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { socials } from "../constants";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import Link from 'next/link';
+import styles from '../styles';
+import { footerVariants } from '../utils/motion';
+import Modal from './reusable/Modal';
 
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
-import Modal from "./reusable/Modal";
-import { useState } from "react";
-import Link from "next/link";
+import { socials } from '../constants';
 
 const Footer = () => {
   const [modalShown, setModalShown] = useState(false);
@@ -91,6 +91,7 @@ const Footer = () => {
         </Link>
         <button
           className="flex items-center h-fit py-4 px-6 bg-gray-300 rounded-2xl text-black"
+          type="button"
           onClick={() => setModalShown(false)}
         >
           Close
