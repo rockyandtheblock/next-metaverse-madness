@@ -59,20 +59,6 @@ const Hero = () => {
               variants={textVariant(1.2)}
               className="w-full bottom-0 z-10 flex flex-col justify-center items-center text-center mt-4 md:mt-5 lg:mt-6 gap-8"
             >
-              <button
-                type="button"
-                className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px] w-[260px]"
-                onClick={() => setModalShown(true)}
-              >
-                <img
-                  src="/headset.svg"
-                  alt="headset"
-                  className="w-[24px] h-[24px] object-contain"
-                />
-                <span className="font-normal text-[16px] text-white">
-                  Join the Hackathon
-                </span>
-              </button>
               <Link
                 type="button"
                 className="flex items-center w-[260px] h-fit py-4 px-6 bg-purple-700 rounded-[32px] gap-[12px]"
@@ -95,6 +81,20 @@ const Hero = () => {
                   Submit Your Solution
                 </span>
               </Link>
+              <button
+                type="button"
+                className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px] w-[260px]"
+                onClick={() => setModalShown(true)}
+              >
+                <img
+                  src="/headset.svg"
+                  alt="headset"
+                  className="w-[24px] h-[24px] object-contain"
+                />
+                <span className="font-normal text-[16px] text-white">
+                  Join the Hackathon
+                </span>
+              </button>
             </motion.div>
           </div>
 
