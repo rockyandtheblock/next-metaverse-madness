@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
-import Image from 'next/image';
+
 import headset from '../assets/headset.svg';
 
 const ExploreCard = ({

@@ -1,8 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 import Image from 'next/image';
+
+import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
+
 import styles from '../styles';
 
 import planet09 from '../assets/planet-09.jpeg';

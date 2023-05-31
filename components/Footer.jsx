@@ -2,14 +2,17 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
+
 import Link from 'next/link';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 import Modal from './reusable/Modal';
 
 import { socials } from '../constants';
-import Image from 'next/image';
+
 import headset from '../assets/headset.svg';
+
 const Footer = () => {
   const [modalShown, setModalShown] = useState(false);
 

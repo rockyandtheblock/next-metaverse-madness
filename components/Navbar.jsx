@@ -1,10 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import styles from '../styles';
+
 import { navVariants } from '../utils/motion';
-import Image from 'next/image';
+
 import search from '../assets/search.svg';
 import menu from '../assets/menu.svg';
 
