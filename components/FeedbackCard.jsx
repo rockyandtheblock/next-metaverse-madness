@@ -2,8 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
-
+import Image from 'next/image';
 import styles from '../styles';
+
+import planet09 from '../assets/planet-09.jpeg';
+import stamp from '../assets/stamp.png';
 
 const FeedbackCard = ({ author, title, message, index }) => (
   <div className={`sm:px-12 xs:px-8 px-6 py-12 ${index}`}>
@@ -16,7 +19,9 @@ const FeedbackCard = ({ author, title, message, index }) => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className={`${index % 2 === 0 ? 'order-1 md:order-2' : ''} flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative`}
+        className={`${
+          index % 2 === 0 ? 'order-1 md:order-2' : ''
+        } flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative`}
       >
         <div className="feedback-gradient" />
         <div>
@@ -37,20 +42,26 @@ const FeedbackCard = ({ author, title, message, index }) => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/planet-09.png"
+        <Image
+          src={planet09}
           alt="planet-09"
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
+          width={planet09.width}
+          height={planet09.height}
         />
 
         <motion.div
           variants={zoomIn(0.4, 1)}
-          className={`${index % 2 === 0 ? '-right-[5%]' : ' -left-[5%]'} lg:block hidden absolute top-[3%]`}
+          className={`${
+            index % 2 === 0 ? '-right-[5%]' : ' -left-[5%]'
+          } lg:block hidden absolute top-[3%]`}
         >
-          <img
-            src="/stamp.png"
+          <Image
+            src={stamp.src}
             alt="stamp"
             className="w-[155px] h-[155px] object-contain animate-spin-slow"
+            width={stamp.width}
+            height={stamp.height}
           />
         </motion.div>
       </motion.div>
