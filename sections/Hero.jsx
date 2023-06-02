@@ -6,7 +6,12 @@ import Link from 'next/link';
 import styles from '../styles';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import Modal from '../components/reusable/Modal';
+import headset from '../assets/headset.svg';
 
+import cover from '../assets/cover.png';
+import stamp from '../assets/stamp.png';
+
+import Image from 'next/image';
 const Hero = () => {
   const [modalShown, setModalShown] = useState(false);
 
@@ -86,8 +91,8 @@ const Hero = () => {
                 className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px] w-[260px]"
                 onClick={() => setModalShown(true)}
               >
-                <img
-                  src="/headset.svg"
+                <Image
+                  src={headset}
                   alt="headset"
                   className="w-[24px] h-[24px] object-contain"
                 />
@@ -104,18 +109,22 @@ const Hero = () => {
           >
             <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
 
-            <img
-              src="/cover.png"
+            <Image
+              src={cover.src}
               alt="hero_cover"
               className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-[5] relative"
+              width={cover.width}
+              height={cover.height}
             />
 
             <a href="#explore">
               <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-[5]">
-                <img
-                  src="/stamp.png"
+                <Image
+                  src={stamp.src}
                   alt="stamp"
                   className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain animate-spin-slow"
+                  width={stamp.width}
+                  height={stamp.height}
                 />
               </div>
             </a>
